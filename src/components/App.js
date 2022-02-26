@@ -7,7 +7,7 @@ const mystate = useSelector((state)=>state.ChangeNum)
 const dispatch = useDispatch(); 
 return (
     <div id='main'>
-          <h1>{mystate}</h1>
+          <h1 data-testid='counter'>{mystate}</h1>
           <button onClick={() => dispatch(incNumber()) }>+</button>
           
           <button onClick={() => dispatch(decNumber()) }>-</button>
